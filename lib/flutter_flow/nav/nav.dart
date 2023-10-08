@@ -53,11 +53,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               : HomePageWidget(),
         ),
         FFRoute(
-          name: 'SortingExample',
-          path: '/sortingExample',
+          name: 'SortingExampleDataTable2',
+          path: '/sortingExampleDataTable2',
           builder: (context, params) => params.isEmpty
-              ? NavBarPage(initialPage: 'SortingExample')
-              : SortingExampleWidget(),
+              ? NavBarPage(initialPage: 'SortingExampleDataTable2')
+              : SortingExampleDataTable2Widget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

@@ -5,25 +5,27 @@ import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'sorting_example_model.dart';
-export 'sorting_example_model.dart';
+import 'sorting_example_data_table2_model.dart';
+export 'sorting_example_data_table2_model.dart';
 
-class SortingExampleWidget extends StatefulWidget {
-  const SortingExampleWidget({Key? key}) : super(key: key);
+class SortingExampleDataTable2Widget extends StatefulWidget {
+  const SortingExampleDataTable2Widget({Key? key}) : super(key: key);
 
   @override
-  _SortingExampleWidgetState createState() => _SortingExampleWidgetState();
+  _SortingExampleDataTable2WidgetState createState() =>
+      _SortingExampleDataTable2WidgetState();
 }
 
-class _SortingExampleWidgetState extends State<SortingExampleWidget> {
-  late SortingExampleModel _model;
+class _SortingExampleDataTable2WidgetState
+    extends State<SortingExampleDataTable2Widget> {
+  late SortingExampleDataTable2Model _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => SortingExampleModel());
+    _model = createModel(context, () => SortingExampleDataTable2Model());
   }
 
   @override
